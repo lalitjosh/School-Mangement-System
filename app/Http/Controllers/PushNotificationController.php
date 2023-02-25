@@ -33,7 +33,7 @@ class PushNotificationController extends Controller
         $arrayToSend = array('to' => "/topics/all", 'notification' => $notification, 'data' => $dataArr, 'priority'=>'high');
         $fields = json_encode ($arrayToSend);
         $headers = array (
-            'Authorization: key=' . "AAAAzWTNkJg:APA91bFLZC0sJHywUsob8NJQVIV0oFrwdGGI3tJabsu0URsLdAUkmYh1YvfYGB-gSymSSon0GIgOV4AnzrtlIBLFljAFsolwg_hSJ_htE-oBj-QBg8h6zBV-TCBAU0LpjIfsGu4gruyU",
+            'Authorization: key=' . "your api key",
             'Content-Type: application/json'
         );
         $ch = curl_init ();
